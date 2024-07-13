@@ -1,0 +1,35 @@
+/* Custom CSS for My Portfolio */
+
+.headshot {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.project-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+h1, h2, h5 {
+    color: #333;
+}
+
+p, a {
+    color: #555;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
