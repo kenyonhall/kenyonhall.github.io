@@ -1,10 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-
-</html>
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +18,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/kenyonhall">Projects</a>
+                    <a class="nav-link" href="https://github.com/kenyonhall">Projects</a>
                 </li>
             </ul>
         </div>
@@ -33,7 +27,7 @@
     <div class="container mt-5">
         <div id="home" class="home">
             <h1>Welcome to My Portfolio - Kenyon Hall</h1>
-            <img src="./KHALL_headshot.jpeg">
+            <img src="./KHALL_headshot.jpeg" alt="Kenyon Hall Headshot">
             <section>
                 <h2>Bio</h2>
                 <p>Write a brief bio about yourself here.</p>
@@ -60,16 +54,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function(){
-          $("a.nav-link").click(function(e){
-              e.preventDefault();
-              var target = $(this).attr("href").substring(1);
-              $('html, body').animate({
-                  scrollTop: $("#" + target).offset().top
-              }, 1000);
-          });
-      });
-  </script>
-  
+        $(document).ready(function(){
+            $("a.nav-link").click(function(e){
+                e.preventDefault();
+                var target = $(this).attr("href").substring(1);
+                $('html, body').animate({
+                    scrollTop: $("#" + target).offset().top
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
