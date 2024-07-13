@@ -1,35 +1,90 @@
 /* Custom CSS for My Portfolio */
 
-.headshot {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    object-fit: cover;
-}
-
-.project-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-h1, h2, h5 {
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-p, a {
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Header styles */
+h1, h2 {
+    color: #343a40;
+}
+
+p {
     color: #555;
 }
 
-.card-title a {
-    text-decoration: none;
+a {
     color: #007bff;
 }
 
-.card-title a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+.headshot {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.bio-section, .video-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Responsive grid layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+/* Icon styles */
+.bio-section a i {
+    margin-right: 8px;
 }
