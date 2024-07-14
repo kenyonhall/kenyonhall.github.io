@@ -1,1 +1,1 @@
-Welcome to my personal page. You can view my persnal portfolio page here. https://kenyonhall.github.io/index.html
+Welcome to my personal page. You can view my personal portfolio page here. https://kenyonhall.github.io/index.html
